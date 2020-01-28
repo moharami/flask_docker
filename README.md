@@ -5,13 +5,13 @@ A simple Flask app running on Docker.
 
 ```shell
 docker build -t flask:latest .
-docker run -d -p 5000:5000 flask
-docker run -d -p 5000:5000 -e APP_COLOR=pink flask
+docker run -d -p 8080:8080 flask
+docker run -d -p 8080:8080 -e APP_COLOR=pink flask
 ```
 
 or, if you want to give your container a specific name:
 
 ```shell
 docker build -t flask:latest .
-docker run --name my-flask -d -p 5000:5000 flask
+docker run --name my-flask -d -p 8080:8080 flask
 ```
